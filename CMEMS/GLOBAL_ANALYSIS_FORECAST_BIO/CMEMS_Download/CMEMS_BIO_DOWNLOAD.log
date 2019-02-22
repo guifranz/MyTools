@@ -1,0 +1,35 @@
+
+C:\Users\HP\Documents\CMEMS\GLOBAL_ANALYSIS_FORECAST_BIO\CMEMS_Download>python motu-client-python/motu-client.py -u gfranz -p Guilherme@CMEMS2015 -m http://nrtcmems.mercator-ocean.fr/motu-web/Motu -s GLOBAL_ANALYSIS_FORECAST_BIO_001_014-TDS -d dataset-global-analysis-forecast-bio-001-014 -x -51.69 -X -37.36 -y -31.81 -Y -19.55 -t "2018-07-16  12:00:00" -T "2018-07-29  12:00:00" -z 0.494 -Z 5727.918 -v CHL -v PHYC -v O2 -v NO3 -v PO4 -v Si -v Fe -v PP -o ..\CMEMS_Download -f Plataforma_SE.nc 
+19:00:24 [ INFO] Asynchronous mode set
+19:00:24 [ INFO] Authenticating user gfranz for service http://nrtcmems.mercator-ocean.fr/motu-web/Motu
+19:00:28 [ INFO] Requesting file to download (this can take a while)...
+19:00:29 [ INFO] Authenticating user gfranz for service http://nrtcmems.mercator-ocean.fr/motu-web/Motu
+19:00:34 [ INFO] The product is ready for download
+19:00:34 [ INFO] Downloading file (this can take a while)...
+19:00:35 [ INFO] File type: application/x-netcdf
+19:00:35 [ INFO] File size: 1.2 MB (1212580 B)
+19:00:35 [ INFO] Downloading file C:\Users\HP\Documents\CMEMS\GLOBAL_ANALYSIS_FORECAST_BIO\CMEMS_Download\Plataforma_SE.nc
+19:00:36 [ INFO] -   1.2 MB (5.4%)
+19:00:36 [ INFO] -   1.2 MB (10.8%)
+19:00:37 [ INFO] -   1.2 MB (16.2%)
+19:00:37 [ INFO] -   1.2 MB (21.6%)
+19:00:37 [ INFO] -   1.2 MB (27.0%)
+19:00:37 [ INFO] -   1.2 MB (32.4%)
+19:00:38 [ INFO] -   1.2 MB (37.8%)
+19:00:38 [ INFO] -   1.2 MB (43.2%)
+19:00:38 [ INFO] -   1.2 MB (48.6%)
+19:00:38 [ INFO] -   1.2 MB (54.0%)
+19:00:39 [ INFO] -   1.2 MB (59.5%)
+19:00:39 [ INFO] -   1.2 MB (64.9%)
+19:00:39 [ INFO] -   1.2 MB (70.3%)
+19:00:39 [ INFO] -   1.2 MB (75.7%)
+19:00:40 [ INFO] -   1.2 MB (81.1%)
+19:00:40 [ INFO] -   1.2 MB (86.5%)
+19:00:40 [ INFO] -   1.2 MB (91.9%)
+19:00:40 [ INFO] -   1.2 MB (97.3%)
+19:00:40 [ INFO] -   1.2 MB (100.0%)
+19:00:40 [ INFO] Processing  time : 0:00:11.327000
+19:00:40 [ INFO] Downloading time : 0:00:05.391000
+19:00:40 [ INFO] Total time       : 0:00:16.718000
+19:00:40 [ INFO] Download rate    : 205.0 kB/s
+19:00:40 [ INFO] Done

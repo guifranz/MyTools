@@ -1,0 +1,15 @@
+START : 2018 07 21 15 34 59
+END : 2018 07 22 15 34 59
+
+path_to_your_python_bin_directory : python
+path_to_your_motu_python_script_directory : motu-client-python/motu-client.py
+your_user : gfranz
+your_password : Guilherme@CMEMS2015
+lon_min : -50.69
+lon_max : -38.36
+lat_min : -30.81
+lat_max : -20.55
+start_depth : 0.494
+end_depth : 5727.9171
+your_output_directory : ..\CMEMS_Download
+your_output_file_name : Plataforma_SE

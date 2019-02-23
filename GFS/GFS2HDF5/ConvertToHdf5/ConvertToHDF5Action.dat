@@ -56,8 +56,8 @@ DIM : 2
 <<end_field>>
 
 <<begin_field>>
-NETCDF_NAME : TCDC_entireatmosphere_consideredasasinglelayer_
-!NETCDF_NAME : TCDC_entireatmosphere
+!NETCDF_NAME : TCDC_entireatmosphere_consideredasasinglelayer_
+NETCDF_NAME : TCDC_entireatmosphere
 NAME : cloud cover
 UNITS : fraction
 DIM : 2
@@ -102,14 +102,44 @@ MULTIPLY_FACTOR : 0.01
 <<end_field>>
 
 <<begin_input_files>>
-20110101_1800_006_temp.grb2.nc
-20110102_0000_003_temp.grb2.nc
-20110102_0000_006_temp.grb2.nc
-20110102_0600_003_temp.grb2.nc
-20110102_0600_006_temp.grb2.nc
-20110102_1200_003_temp.grb2.nc
-20110102_1200_006_temp.grb2.nc
-20110102_1800_003_temp.grb2.nc
-20110102_1800_006_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f003_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f006_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f009_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f012_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f015_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f018_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f021_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f024_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f027_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f030_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f033_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f036_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f039_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f042_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f045_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f048_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f051_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f054_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f057_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f060_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f063_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f066_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f069_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f072_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f075_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f078_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f081_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f084_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f087_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f090_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f093_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f096_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f099_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f102_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f105_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f108_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f111_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f114_temp.grb2.nc
+20190222gfs.t18z.pgrb2.0p50.f117_temp.grb2.nc
 <<end_input_files>>
 <end_file>

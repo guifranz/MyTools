@@ -209,7 +209,7 @@
  STEP_ACCUMULATED_GFS      ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
  STEP_ACCUMULATED          ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
  RFLECTIVITY_2_PRECIPITATI ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
- NETCDF_NAME               ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       TCDC_entireatmosphere_consideredasasinglelayer_              YES
+ NETCDF_NAME               ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       TCDC_entireatmosphere                                        YES
  ADD_FACTOR                ModuleNetCDFCF_2_HDF5MOHI 0.0000000E+00             From Block In Block       0.0000000E+00                                                YES
  MULTIPLY_FACTOR           ModuleNetCDFCF_2_HDF5MOHI 1.000000                  From Block In Block       9.9999998E-03                                                YES
  MINIMUM_VALUE             ModuleNetCDFCF_2_HDF5MOHI -9.8999995E+15            From Block In Block       -9.8999995E+15                                               YES

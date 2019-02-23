@@ -56,8 +56,8 @@ DIM : 2
 <<end_field>>
 
 <<begin_field>>
-NETCDF_NAME : TCDC_entireatmosphere_consideredasasinglelayer_
-!NETCDF_NAME : TCDC_entireatmosphere
+!NETCDF_NAME : TCDC_entireatmosphere_consideredasasinglelayer_
+NETCDF_NAME : TCDC_entireatmosphere
 NAME : cloud cover
 UNITS : fraction
 DIM : 2

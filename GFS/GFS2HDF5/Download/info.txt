@@ -1,7 +1,7 @@
 http://www.cpc.ncep.noaa.gov/products/wesley/fast_downloading_grib.html
 
 Requirements
-
+Python 3
 perl (http://strawberryperl.com/)
 grep (https://sourceforge.net/projects/getgnuwin32/?source=typ_redirect)
 cURL (https://curl.haxx.se/download.html)

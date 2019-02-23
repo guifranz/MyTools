@@ -1,7 +1,0 @@
-#read_gfs_product_type (forecasts = 1, analysis = 0)
-GFS_TYPE : 1
-
-FORECAST_MODE : 1
-
-START : 2017 11 15 00 00 00
-END : 2017 11 16 00 00 00

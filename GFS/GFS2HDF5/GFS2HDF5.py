@@ -12,7 +12,7 @@ download_dir = (dirpath+"\Download")
 ConvertToNetcdf_dir = (dirpath+"\ConvertToNetcdf")
 ConvertToHdf5_dir = (dirpath+"\ConvertToHdf5")
 
-backup_path =  dirpath
+backup_path =  (dirpath+"\Backup")
 
 #####################################################
 def read_date():
@@ -61,8 +61,23 @@ def write_date(file_name):
 			file.write(file_lines[n])
 
 #####################################################
+forecast_mode = 0
 
-read_date()
+with open(input_file) as file:
+	for line in file:
+		if re.search("^FORECAST_MODE.+:", line):
+			words = line.split()
+			forecast_mode = int(words[2])
+
+if forecast_mode == 1:
+
+	initial_date = datetime.datetime.now()
+	
+	number_of_runs = 1
+
+else:
+	read_date()
+
 
 for run in range (0,number_of_runs):	
 	
@@ -110,7 +125,10 @@ for run in range (0,number_of_runs):
 		
 	output = subprocess.call(["Convert2Hdf5.bat"])
 	
-	output_dir = backup_path+"\\"+str(next_start_date.strftime("%Y"))+"\\"+str(next_start_date.strftime("%m"))+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d"))
+	if forecast_mode == 1:
+		output_dir = backup_path
+	else:
+		output_dir = backup_path+"\\"+"\\"+str(initial_date.strftime("%Y%m%d"))
 		
 	if not os.path.exists(output_dir):
 		os.makedirs(output_dir)

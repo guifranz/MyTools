@@ -1,2 +1,0 @@
-GFS_DOWNLOAD.py
-pause

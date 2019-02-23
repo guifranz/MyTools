@@ -10,28 +10,34 @@ exe_dir = (dirpath+"\\Level_1\\exe")
 mohid_log = (exe_dir+"\\Mohid.log")
 
 #Define number of domains
-number_of_domains = 2
+number_of_domains = 1
 
 #Define directories (comment when not applicable)
 results_dir = [0]*number_of_domains
 results_dir [0] = (dirpath+"\\Level_1\\res")
-results_dir [1] = (dirpath+"\\Level_1\\Level_2\\res")
+#results_dir [1] = (dirpath+"\\Level_1\\Level_2\\res")
 
 data_dir = [0]*number_of_domains
 data_dir [0] = (dirpath+"\\Level_1\\data")
-data_dir [1] = (dirpath+"\\Level_1\\Level_2\\data")
+#data_dir [1] = (dirpath+"\\Level_1\\Level_2\\data")
 
 backup_dir = [0]*number_of_domains
 backup_dir [0] = (dirpath+"\\Backup\\Level_1")
-backup_dir [1] = (dirpath+"\\Backup\\Level_2")
+#backup_dir [1] = (dirpath+"\\Backup\\Level_2")
 
 
-interpolate_gfs_dir = (dirpath+"\\Work\\GFS\\Interpolate\\Level_2")
+interpolate_gfs_dir = (dirpath+"\\Work\\GFS\\Interpolate")
 
-boundary_conditions_dir = (dirpath+"\\Level_1\\Level_2\\General Data\\Boundary Conditions")
+boundary_conditions_dir = (dirpath+"\\Level_1\\General Data\\Boundary Conditions")
 
-copy_results_from_dir = "D:\Aplica\Plataforma_SE\Backup"
+dir_father_phy_results = "..\Work\CMEMS\GLOBAL_ANALYSIS_FORECAST_PHY\Backup"
+file_name_phy = "Plataforma_SE.hdf5"
+#file_name_phy = "Hydrodynamic_2.hdf5"
 
+
+dir_father_bio_results = "..\Work\CMEMS\GLOBAL_ANALYSIS_FORECAST_BIO\Backup"
+file_name_bio = "Plataforma_SE_Bio.hdf5"
+#file_name_bio ="WaterProperties_2.hdf5"
 
 #####################################################
 def read_date():
@@ -39,18 +45,42 @@ def read_date():
 	global end_date
 	global number_of_runs
 	
+	forecast_mode = 0
+	refday_to_start = 0
+	number_of_runs = 0
+	
 	with open(input_file) as file:
 		for line in file:
-			if re.search("^START.+:", line):
-				words = line.split()
-				initial_date = datetime.datetime(int(words[2]),int(words[3]),int(words[4]),int(words[5]),int(words[6]),int(words[7]))
-			elif re.search("^END.+:", line):
-				words = line.split()
-				end_date = datetime.datetime(int(words[2]),int(words[3]),int(words[4]),int(words[5]),int(words[6]),int(words[7]))
+			if re.search("^FORECAST_MODE.+:", line):
+				number = line.split()
+				forecast_mode = int(number[2])
+				
+	if forecast_mode == 1:
+		with open(input_file) as file:
+			for line in file:
+				if re.search("^REFDAY_TO_START.+:", line):
+					number = line.split()
+					refday_to_start = int(number[2])
+				elif re.search("^NUMBER_OF_RUNS.+:", line):
+					number = line.split()
+					number_of_runs = int(number[2])
 					
-	interval = end_date - initial_date
-	
-	number_of_runs = interval.days	
+		initial_date = datetime.datetime.now() - datetime.timedelta(days = refday_to_start)
+		end_date = initial_date + datetime.timedelta(days = number_of_runs-1)
+		
+	else:	
+		with open(input_file) as file:
+			for line in file:
+				if re.search("^START.+:", line):
+					words = line.split()
+					initial_date = datetime.datetime(int(words[2]),int(words[3]),int(words[4]),int(words[5]),int(words[6]),int(words[7]))
+				elif re.search("^END.+:", line):
+					words = line.split()
+					end_date = datetime.datetime(int(words[2]),int(words[3]),int(words[4]),int(words[5]),int(words[6]),int(words[7]))
+						
+		interval = end_date - initial_date
+		
+		number_of_runs = interval.days	
 #####################################################
 def next_date (run):
 	global next_start_date
@@ -159,15 +189,26 @@ for run in range (0,number_of_runs):
 	interpolate_gfs ()
 					
 	#Copy ocean boundary conditions
-	copy_results_from_dir_date = (copy_results_from_dir+"\\"+str(next_start_date.strftime("%Y"))+"\\"+str(next_start_date.strftime("%m"))+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d")))
+	#Hydrodynamic
+	dir_date = (dir_father_phy_results+"\\"+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d")))
 	
-	os.chdir(copy_results_from_dir_date)
+	os.chdir(dir_date)
 	
-	hdf5_files = glob.iglob(os.path.join(copy_results_from_dir_date,"Hydrodynamic_2.hdf5"))
+	hdf5_files = glob.iglob(os.path.join(dir_date,file_name_phy))
+	
+	#Water Properties
+	dir_date = (dir_father_bio_results)
+	#dir_date = (dir_father_bio_results+"\\"+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d")))
+	
+	os.chdir(dir_date)
+	
+	hdf5_files = glob.iglob(os.path.join(dir_date,file_name_bio))
+	
+	
 	for file in hdf5_files:
 		shutil.copy(file, boundary_conditions_dir)
 		
-	hdf5_files = glob.iglob(os.path.join(copy_results_from_dir_date,"WaterProperties_2.hdf5"))
+	hdf5_files = glob.iglob(os.path.join(copy_results_from_dir_date,file_name_bio))
 	for file in hdf5_files:
 		shutil.copy(file, boundary_conditions_dir)
 		

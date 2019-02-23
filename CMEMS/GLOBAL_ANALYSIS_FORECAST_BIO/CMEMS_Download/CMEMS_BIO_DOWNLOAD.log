@@ -1,35 +1,54 @@
 
-C:\Users\HP\Documents\CMEMS\GLOBAL_ANALYSIS_FORECAST_BIO\CMEMS_Download>python motu-client-python/motu-client.py -u gfranz -p Guilherme@CMEMS2015 -m http://nrtcmems.mercator-ocean.fr/motu-web/Motu -s GLOBAL_ANALYSIS_FORECAST_BIO_001_014-TDS -d dataset-global-analysis-forecast-bio-001-014 -x -51.69 -X -37.36 -y -31.81 -Y -19.55 -t "2018-07-16  12:00:00" -T "2018-07-29  12:00:00" -z 0.494 -Z 5727.918 -v CHL -v PHYC -v O2 -v NO3 -v PO4 -v Si -v Fe -v PP -o ..\CMEMS_Download -f Plataforma_SE.nc 
-19:00:24 [ INFO] Asynchronous mode set
-19:00:24 [ INFO] Authenticating user gfranz for service http://nrtcmems.mercator-ocean.fr/motu-web/Motu
-19:00:28 [ INFO] Requesting file to download (this can take a while)...
-19:00:29 [ INFO] Authenticating user gfranz for service http://nrtcmems.mercator-ocean.fr/motu-web/Motu
-19:00:34 [ INFO] The product is ready for download
-19:00:34 [ INFO] Downloading file (this can take a while)...
-19:00:35 [ INFO] File type: application/x-netcdf
-19:00:35 [ INFO] File size: 1.2 MB (1212580 B)
-19:00:35 [ INFO] Downloading file C:\Users\HP\Documents\CMEMS\GLOBAL_ANALYSIS_FORECAST_BIO\CMEMS_Download\Plataforma_SE.nc
-19:00:36 [ INFO] -   1.2 MB (5.4%)
-19:00:36 [ INFO] -   1.2 MB (10.8%)
-19:00:37 [ INFO] -   1.2 MB (16.2%)
-19:00:37 [ INFO] -   1.2 MB (21.6%)
-19:00:37 [ INFO] -   1.2 MB (27.0%)
-19:00:37 [ INFO] -   1.2 MB (32.4%)
-19:00:38 [ INFO] -   1.2 MB (37.8%)
-19:00:38 [ INFO] -   1.2 MB (43.2%)
-19:00:38 [ INFO] -   1.2 MB (48.6%)
-19:00:38 [ INFO] -   1.2 MB (54.0%)
-19:00:39 [ INFO] -   1.2 MB (59.5%)
-19:00:39 [ INFO] -   1.2 MB (64.9%)
-19:00:39 [ INFO] -   1.2 MB (70.3%)
-19:00:39 [ INFO] -   1.2 MB (75.7%)
-19:00:40 [ INFO] -   1.2 MB (81.1%)
-19:00:40 [ INFO] -   1.2 MB (86.5%)
-19:00:40 [ INFO] -   1.2 MB (91.9%)
-19:00:40 [ INFO] -   1.2 MB (97.3%)
-19:00:40 [ INFO] -   1.2 MB (100.0%)
-19:00:40 [ INFO] Processing  time : 0:00:11.327000
-19:00:40 [ INFO] Downloading time : 0:00:05.391000
-19:00:40 [ INFO] Total time       : 0:00:16.718000
-19:00:40 [ INFO] Download rate    : 205.0 kB/s
-19:00:40 [ INFO] Done
+F:\Aplica_OP\Work\CMEMS\GLOBAL_ANALYSIS_FORECAST_BIO\CMEMS_Download>python motu-client-python/motu-client.py -u gfranz -p Guilherme@CMEMS2015 -m http://nrtcmems.mercator-ocean.fr/motu-web/Motu -s GLOBAL_ANALYSIS_FORECAST_BIO_001_014-TDS -d dataset-global-analysis-forecast-bio-001-014 -x -51.69 -X -37.36 -y -31.81 -Y -19.55 -t "2019-02-16  12:00:00" -T "2019-03-02  12:00:00" -z 0.494 -Z 5727.918 -v CHL -v PHYC -v O2 -v NO3 -v PO4 -v Si -v Fe -v PP -o ..\CMEMS_Download -f Plataforma_SE.nc 
+2019-02-23 17:27:16.290 [WARNING] "motu-client" module is deprecated since version1.8. A new Python module named "motuclient" without a dash separator between motu and client shall be used instead of "motu-client".
+2019-02-23 17:27:16.294 [ INFO] Asynchronous mode set
+2019-02-23 17:27:16.295 [ INFO] Authenticating user gfranz for service http://nrtcmems.mercator-ocean.fr/motu-web/Motu
+2019-02-23 17:27:20.829 [ INFO] Requesting file to download (this can take a while)...
+2019-02-23 17:27:21.869 [ INFO] Authenticating user gfranz for service http://nrtcmems.mercator-ocean.fr/motu-web/Motu
+2019-02-23 17:27:27.200 [ INFO] The product is ready for download
+2019-02-23 17:27:27.201 [ INFO] Downloading file (this can take a while)...
+2019-02-23 17:27:27.702 [ INFO] File type: application/x-netcdf
+2019-02-23 17:27:27.702 [ INFO] File size: 2.4 MB (2418984 B)
+2019-02-23 17:27:27.703 [ INFO] Downloading file F:\Aplica_OP\Work\CMEMS\GLOBAL_ANALYSIS_FORECAST_BIO\CMEMS_Download\Plataforma_SE.nc
+2019-02-23 17:27:28.437 [ INFO] -   2.4 MB (2.7%)
+2019-02-23 17:27:28.685 [ INFO] -   2.4 MB (5.4%)
+2019-02-23 17:27:28.932 [ INFO] -   2.4 MB (8.1%)
+2019-02-23 17:27:29.179 [ INFO] -   2.4 MB (10.8%)
+2019-02-23 17:27:29.424 [ INFO] -   2.4 MB (13.5%)
+2019-02-23 17:27:29.431 [ INFO] -   2.4 MB (16.3%)
+2019-02-23 17:27:29.672 [ INFO] -   2.4 MB (19.0%)
+2019-02-23 17:27:29.680 [ INFO] -   2.4 MB (21.7%)
+2019-02-23 17:27:29.688 [ INFO] -   2.4 MB (24.4%)
+2019-02-23 17:27:30.164 [ INFO] -   2.4 MB (27.1%)
+2019-02-23 17:27:30.164 [ INFO] -   2.4 MB (29.8%)
+2019-02-23 17:27:30.165 [ INFO] -   2.4 MB (32.5%)
+2019-02-23 17:27:30.165 [ INFO] -   2.4 MB (35.2%)
+2019-02-23 17:27:30.170 [ INFO] -   2.4 MB (37.9%)
+2019-02-23 17:27:30.180 [ INFO] -   2.4 MB (40.6%)
+2019-02-23 17:27:30.191 [ INFO] -   2.4 MB (43.3%)
+2019-02-23 17:27:30.418 [ INFO] -   2.4 MB (46.1%)
+2019-02-23 17:27:30.426 [ INFO] -   2.4 MB (48.8%)
+2019-02-23 17:27:30.438 [ INFO] -   2.4 MB (51.5%)
+2019-02-23 17:27:30.663 [ INFO] -   2.4 MB (54.2%)
+2019-02-23 17:27:30.673 [ INFO] -   2.4 MB (56.9%)
+2019-02-23 17:27:30.684 [ INFO] -   2.4 MB (59.6%)
+2019-02-23 17:27:30.909 [ INFO] -   2.4 MB (62.3%)
+2019-02-23 17:27:30.919 [ INFO] -   2.4 MB (65.0%)
+2019-02-23 17:27:30.927 [ INFO] -   2.4 MB (67.7%)
+2019-02-23 17:27:31.155 [ INFO] -   2.4 MB (70.4%)
+2019-02-23 17:27:31.160 [ INFO] -   2.4 MB (73.1%)
+2019-02-23 17:27:31.171 [ INFO] -   2.4 MB (75.9%)
+2019-02-23 17:27:31.178 [ INFO] -   2.4 MB (78.6%)
+2019-02-23 17:27:31.403 [ INFO] -   2.4 MB (81.3%)
+2019-02-23 17:27:31.412 [ INFO] -   2.4 MB (84.0%)
+2019-02-23 17:27:31.418 [ INFO] -   2.4 MB (86.7%)
+2019-02-23 17:27:31.647 [ INFO] -   2.4 MB (89.4%)
+2019-02-23 17:27:31.655 [ INFO] -   2.4 MB (92.1%)
+2019-02-23 17:27:31.664 [ INFO] -   2.4 MB (94.8%)
+2019-02-23 17:27:31.671 [ INFO] -   2.4 MB (97.5%)
+2019-02-23 17:27:31.893 [ INFO] -   2.4 MB (100.0%)
+2019-02-23 17:27:31.894 [ INFO] Processing  time : 0:00:11.409404
+2019-02-23 17:27:31.894 [ INFO] Downloading time : 0:00:04.191465
+2019-02-23 17:27:31.894 [ INFO] Total time       : 0:00:15.600869
+2019-02-23 17:27:31.894 [ INFO] Download rate    : 515.4 kB/s
+2019-02-23 17:27:31.905 [ INFO] Done

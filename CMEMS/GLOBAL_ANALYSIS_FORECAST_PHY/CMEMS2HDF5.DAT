@@ -1,6 +1,6 @@
 FORECAST_MODE                 : 1
-REFDAY_TO_START               : 1  
-NUMBER_OF_RUNS                : 3
+REFDAY_TO_START               : 0  
+NUMBER_OF_RUNS                : 4
 
 START                         : 2016 01 01 00 00 00
 END                           : 2016 01 02 00 00 00

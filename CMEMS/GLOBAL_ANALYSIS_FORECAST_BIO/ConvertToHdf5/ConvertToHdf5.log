@@ -41,11 +41,11 @@
  Program ConvertToHDF5 successfully terminated
  
  
- Total Elapsed Time     :           0.05   0h  0min  0s
+ Total Elapsed Time     :           0.23   0h  0min  0s
 
- Total CPU time         :           0.08
+ Total CPU time         :           0.16
 
- CPU usage (%)          :         144.67
+ CPU usage (%)          :          67.06
 
  
  ----------------------------------------------------------

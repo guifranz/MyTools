@@ -1,0 +1,7 @@
+#read_gfs_product_type (forecasts = 1, analysis = 0)
+GFS_TYPE : 1
+
+FORECAST_MODE : 1
+
+START : 2019 03 05 11 29 57
+END : 2019 03 06 11 29 57

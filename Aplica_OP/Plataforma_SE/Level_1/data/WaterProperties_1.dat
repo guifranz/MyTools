@@ -1,0 +1,572 @@
+OUTPUT_TIME              : 0 43200
+SURFACE_OUTPUT_TIME      : 0 3600
+!TIME_SERIE_LOCATION       : ..\General Data\Time Series\Maregrafos_Brasil_3D.dat
+
+ADV_METHOD_H            : 4
+ADV_METHOD_V            : 4
+TVD_LIMIT_H             : 4
+TVD_LIMIT_V             : 4
+
+<beginproperty>
+NAME                         : salinity
+UNITS                        : PSU
+DESCRIPTION                  : MyOcean Interpolated results
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : HDF
+FIELD4D                 : 1
+SPATIAL_INTERPOL        : 1
+EXTRAPOLATE             : 1
+FILENAME                     : ..\General Data\Boundary Conditions\Plataforma_SE.hdf5
+
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+ADVECTION_DIFFUSION          : 1
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+DATA_ASSIMILATION            : 1
+TYPE_ZUV                     : z
+
+!MIN_VALUE : 0
+!MAX_VALUE : 40
+
+TIME_SERIE                   : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+<endproperty>
+
+
+<beginproperty>
+NAME                         : temperature
+UNITS                        : C
+DESCRIPTION                  : MyOcean Interpolated results
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : HDF
+FIELD4D                 : 1
+SPATIAL_INTERPOL        : 1
+EXTRAPOLATE             : 1
+FILENAME                     : ..\General Data\Boundary Conditions\Plataforma_SE.hdf5
+
+DEFAULTVALUE                 : 25.
+
+BOUNDARY_CONDITION           : 4
+
+
+OLD                          : 0
+
+ADVECTION_DIFFUSION          : 1
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+SURFACE_FLUXES               : 1
+
+DATA_ASSIMILATION            : 1
+TYPE_ZUV                     : z
+
+!MIN_VALUE : 0
+!MAX_VALUE : 40
+
+TIME_SERIE                   : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+<endproperty>
+
+
+<beginproperty>
+NAME                      : oxygen
+UNITS                     : mg/l
+DESCRIPTION               : dissolved oxygen
+IS_COEF                   : .001
+PARTICULATE               : 0
+
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 8.0
+
+BOUNDARY_CONDITION        : 4
+
+OLD                       : 0
+
+ADVECTION_DIFFUSION       : 1
+DISCHARGES                : 0
+DISCHARGES_TRACKING       : 0
+SURFACE_FLUXES            : 1
+BOTTOM_FLUXES             : 0
+
+WATER_QUALITY             : 1
+DATA_ASSIMILATION         : 1
+TYPE_ZUV                  : z
+
+TIME_SERIE                : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                : 1
+OUTPUT_SURFACE_HDF        : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+!--------------- Nutrients ---------------------
+
+<beginproperty>
+NAME                         : nitrate
+UNITS                        : mg/l
+DESCRIPTION                  : nitrate concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+ADVECTION_DIFFUSION          : 1
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+ADVECTION_H_IMP_EXP          : 1        Only for 2D simulations (3D : 1)
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+PARTITION                    : 0
+
+WATER_QUALITY                : 1
+DATA_ASSIMILATION            : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : nitrite
+UNITS                        : mg/l
+DESCRIPTION                  : nitrite concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+ADVECTION_DIFFUSION          : 1
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+ADVECTION_H_IMP_EXP          : 1        Only for 2D simulations (3D : 1)
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+
+PARTITION                    : 0
+
+DATA_ASSIMILATION            : 0
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : ammonia
+UNITS                        : mg/l
+DESCRIPTION                  : ammonia concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+ADVECTION_DIFFUSION          : 1
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+ADVECTION_H_IMP_EXP          : 1        Only for 2D simulations (3D : 1)
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+
+PARTITION                    : 0
+
+DATA_ASSIMILATION            : 0
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : dissolved non-refractory organic nitrogen
+UNITS                        : mg/l
+DESCRIPTION                  : dissolved non-refractory organic nitrogen concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+
+ADVECTION_DIFFUSION          : 1
+ADV_METHOD_H                 : 1
+ADVECTION_H_IMP_EXP          : 1        (2D: 0    3D : 1)
+ADV_METHOD_V                 : 1
+ADVECTION_V_IMP_EXP          : 0
+
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+DATA_ASSIMILATION            : 0
+PARTITION                    : 0
+
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : dissolved refractory organic nitrogen
+UNITS                        : mg/l
+DESCRIPTION                  : dissolved refractory organic nitrogen concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+ADVECTION_DIFFUSION          : 1
+ADV_METHOD_H                 : 1
+ADVECTION_H_IMP_EXP          : 1        (2D: 0    3D : 1)
+ADV_METHOD_V                 : 1
+ADVECTION_V_IMP_EXP          : 0
+
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+DATA_ASSIMILATION            : 0
+PARTITION                    : 0
+
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : particulate organic nitrogen
+UNITS                        : mg/l
+DESCRIPTION                  : particulate organic nitrogen concentration
+IS_COEF                      : .001
+PARTICULATE                  : 1
+INITIALIZATION_METHOD        : CONSTANT
+
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+
+ADVECTION_DIFFUSION          : 1
+ADV_METHOD_H                 : 1
+ADVECTION_H_IMP_EXP          : 1       ! (2D: 0    3D : 1)
+ADV_METHOD_V                 : 1
+ADVECTION_V_IMP_EXP          : 0
+
+VERTICAL_MOVEMENT            : 1
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 1
+DATA_ASSIMILATION            : 0
+PARTITION                    : 0
+
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : inorganic phosphorus
+UNITS                        : mg/l
+DESCRIPTION                  : phosphorus concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+ADVECTION_DIFFUSION          : 1
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+ADVECTION_H_IMP_EXP          : 1        Only for 2D simulations (3D : 1)
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+PARTITION                    : 0
+
+DATA_ASSIMILATION            : 1
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : dissolved refractory organic phosphorus
+UNITS                        : mg/l
+DESCRIPTION                  : phosphorus concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : .0
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+
+ADVECTION_DIFFUSION          : 1
+ADV_METHOD_H                 : 1
+ADVECTION_H_IMP_EXP          : 1        (2D: 0    3D : 1)
+ADV_METHOD_V                 : 1
+ADVECTION_V_IMP_EXP          : 0
+
+
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+DATA_ASSIMILATION            : 0
+PARTITION                    : 0
+
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : dissolved non-refractory organic phosphorus
+UNITS                        : mg/l
+DESCRIPTION                  : phosphorus concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.0055
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+
+ADVECTION_DIFFUSION          : 1
+ADV_METHOD_H                 : 1
+ADVECTION_H_IMP_EXP          : 1        (2D: 0    3D : 1)
+ADV_METHOD_V                 : 1
+ADVECTION_V_IMP_EXP          : 0
+
+
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+DATA_ASSIMILATION            : 0
+PARTITION                    : 0
+
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : particulate organic phosphorus
+UNITS                        : mg/l
+DESCRIPTION                  : phosphorus concentration
+IS_COEF                      : .001
+PARTICULATE                  : 1
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+
+ADVECTION_DIFFUSION          : 1
+ADV_METHOD_H                 : 1
+ADVECTION_H_IMP_EXP          : 1       ! (2D: 0    3D : 1)
+ADV_METHOD_V                 : 1
+ADVECTION_V_IMP_EXP          : 0
+
+
+VERTICAL_MOVEMENT            : 1
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 1
+DATA_ASSIMILATION            : 0
+PARTITION                    : 0
+
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : phytoplankton
+UNITS                        : mgC/l
+DESCRIPTION                  : phytoplankton concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+
+ADVECTION_DIFFUSION          : 1
+ADV_METHOD_H                 : 1
+ADVECTION_H_IMP_EXP          : 1        (2D: 0    3D : 1)
+ADV_METHOD_V                 : 1
+ADVECTION_V_IMP_EXP          : 0
+
+
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+
+PARTITION                    : 0
+
+DATA_ASSIMILATION            : 1
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+<beginproperty>
+NAME                         : zooplankton
+UNITS                        : mgC/l
+DESCRIPTION                  : zooplankton concentration
+IS_COEF                      : .001
+PARTICULATE                  : 0
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.0001
+
+BOUNDARY_CONDITION           : 4
+
+OLD                          : 0
+
+DISCHARGES                   : 0
+DISCHARGES_TRACKING          : 0
+
+ADVECTION_DIFFUSION          : 1
+ADV_METHOD_H                 : 1
+ADVECTION_H_IMP_EXP          : 1        (2D: 0    3D : 1)
+ADV_METHOD_V                 : 1
+ADVECTION_V_IMP_EXP          : 0
+
+
+VERTICAL_MOVEMENT            : 0
+SURFACE_FLUXES               : 0
+BOTTOM_FLUXES                : 0
+DATA_ASSIMILATION            : 0
+PARTITION                    : 0
+
+WATER_QUALITY                : 1
+
+TIME_SERIE                   : 0
+BOX_TIME_SERIE               : 0
+OUTPUT_HDF                   : 1
+OUTPUT_SURFACE_HDF           : 1
+
+MIN_VALUE                     : 0.
+<endproperty>
+
+!<beginoutput>
+!<<beginoutwindow>>
+OUTPUT_TIME_W             : 0 900.
+KLB_KUB_W                 : 10 50
+ILB_IUB_W                 : 9 266
+JLB_JUB_W                 : 6 165
+!<<endoutwindow>>
+!<endoutput>

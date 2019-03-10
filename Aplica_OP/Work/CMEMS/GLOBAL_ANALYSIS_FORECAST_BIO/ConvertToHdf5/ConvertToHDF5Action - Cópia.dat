@@ -1,0 +1,81 @@
+<begin_file>
+ 
+ACTION : CONVERT NETCDF CF TO HDF5 MOHID
+HDF5_OUT : 1
+NETCDF_OUT : 0
+OUTPUT_NETCDF_FILE : NULL.nc
+OUTPUTFILENAME           : Plataforma_SE.hdf5
+ 
+<<begin_time>>
+NETCDF_NAME : time_counter
+<<end_time>>
+ 
+<<begin_grid>>
+NETCDF_NAME_LAT : latitude
+NETCDF_NAME_LONG : longitude
+NETCDF_NAME_MAPPING : CHL
+MAPPING_LIMIT : -32000
+INVERT_LAYER_ORDER : 1
+NETCDF_NAME_DEPTH   : depth
+BATHYM_FROM_MAP : 0
+BATHYM_FILENAME : CMEMS_GridData.dat
+<<end_grid>>
+ 
+PROPERTIES_NUMBER : 5
+ 
+<<begin_field>>
+NETCDF_NAME : CHL
+NAME : phytoplankton
+UNITS : mg/l
+DESCRIPTION : MOHID
+DIM : 3
+ADD_FACTOR      : 0.
+MULTIPLY_FACTOR :  1.0E-3
+<<end_field>>
+
+<<begin_field>>
+NETCDF_NAME : PO4
+NAME : inorganic phosphorus
+UNITS : mgP/l
+DESCRIPTION : MOHID
+DIM : 3
+ADD_FACTOR      : 0.
+MULTIPLY_FACTOR :  30.9702E-3
+<<end_field>>
+
+<<begin_field>>
+NETCDF_NAME : NO3
+NAME : nitrate
+UNITS : mgN/l
+DESCRIPTION : MOHID
+DIM : 3
+ADD_FACTOR      : 0.
+MULTIPLY_FACTOR :  14.2251E-3
+<<end_field>>
+
+<<begin_field>>
+NETCDF_NAME : O2
+NAME : oxygen
+UNITS : mgO/l
+DESCRIPTION : MOHID
+DIM : 3
+ADD_FACTOR      : 0.
+MULTIPLY_FACTOR :  31.9988E-3
+<<end_field>>
+
+<<begin_field>>
+NETCDF_NAME : Si
+NAME : dissolved silica
+UNITS : mgSi/l
+DESCRIPTION : MOHID
+DIM : 3
+ADD_FACTOR      : 0.
+MULTIPLY_FACTOR :  28.0855E-3
+<<end_field>>
+ 
+<<begin_input_files>>
+Plataforma_SE.nc
+<<end_input_files>>
+ 
+<end_file>
+ 

@@ -1,0 +1,7 @@
+FORECAST_MODE                 : 1
+REFDAY_TO_START               : 0
+NUMBER_OF_RUNS                : 4
+
+START                 : 2014 12 30 0 0 0
+END                   : 2016 01 01 00 0 0
+

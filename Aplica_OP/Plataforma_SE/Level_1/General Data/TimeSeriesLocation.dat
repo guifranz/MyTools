@@ -1,0 +1,23 @@
+DT_OUTPUT_TIME            : 3600
+MAX_BUFFER_SIZE           : 10000
+
+<BeginTimeSerie>
+NAME                      : Boia_Simcosta_50K
+COORD_X                   : 768595.668359
+COORD_Y                   : 7158936.98798
+LOCALIZATION_K            : 50
+<EndTimeSerie>
+
+<BeginTimeSerie>
+NAME                      : Boia_Simcosta_49K
+COORD_X                   : 768595.668359
+COORD_Y                   : 7158936.98798
+LOCALIZATION_K            : 49
+<EndTimeSerie>
+
+<BeginTimeSerie>
+NAME                      : Boia_Simcosta_49K
+COORD_X                   : 768595.668359
+COORD_Y                   : 7158936.98798
+LOCALIZATION_K            : 49
+<EndTimeSerie>

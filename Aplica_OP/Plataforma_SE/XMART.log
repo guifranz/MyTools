@@ -1,0 +1,2 @@
+
+F:\Aplica_OP\Plataforma_SE\Level_1\exe>mpiexec -np 6 MOHIDWater_MPI  1>Mohid.log 

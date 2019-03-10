@@ -1,0 +1,69 @@
+!rugosity and erosion/deposition parameter definition
+<begin_rugosity>
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.0025
+<end_rugosity>
+
+
+<begin_critical_shear_erosion>
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.4
+<end_critical_shear_erosion>
+
+<begin_critical_shear_deposition>
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.2
+<end_critical_shear_deposition>
+
+<begin_erosion_rate>
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.00005
+<end_erosion_rate>
+
+
+<beginproperty>
+NAME                      : particulate organic nitrogen
+UNITS                     : kg/m2
+DESCRIPTION               : particulate organic nitrogen mass
+PARTICULATE               : 1
+DETRITUS                  : 0
+!becomes part of detritus when reaches the bottom
+
+WATER_FLUXES              : 1
+EROSION                   : 0
+DEPOSITION                : 1
+CEQUALW2                  : 0
+BENTHOS                   : 0
+OLD                       : 0
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.0005
+MASS_LIMITATION           : 1
+MASS_MIN                  : 0.
+
+TIME_SERIE                : 0
+OUTPUT_HDF                : 0.
+!DT_INTERVAL               : 1200.
+<endproperty>
+
+<beginproperty>
+NAME                      : particulate organic phosphorus
+UNITS                     : kg/m2
+DESCRIPTION               : particulate organic phosphorus mass
+PARTICULATE               : 1
+DETRITUS                  : 0
+
+WATER_FLUXES              : 1
+EROSION                   : 0
+DEPOSITION                : 1
+CEQUALW2                  : 0
+BENTHOS                   : 0
+OLD                       : 0
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.005
+MASS_LIMITATION           : 1
+MASS_MIN                  : 0.
+
+TIME_SERIE                : 0
+OUTPUT_HDF                : 0.
+!DT_INTERVAL               : 1200.
+<endproperty>

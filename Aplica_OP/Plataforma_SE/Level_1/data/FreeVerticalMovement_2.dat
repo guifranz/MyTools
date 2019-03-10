@@ -1,0 +1,13 @@
+<beginproperty>
+NAME                      : particulate organic nitrogen
+WS_TYPE                   : 1
+WS_VALUE                  : 2.8E-06
+FREEVERT_IMPEXP_ADV       : 0
+<endproperty>
+
+<beginproperty>
+NAME                      : particulate organic phosphorus
+WS_TYPE                   : 1
+WS_VALUE                  : 2.8E-06
+FREEVERT_IMPEXP_ADV       : 0
+<endproperty>

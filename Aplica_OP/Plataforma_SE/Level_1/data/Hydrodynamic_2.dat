@@ -1,0 +1,52 @@
+!Compute Options
+TIDE                      : 0
+TIDEPOTENTIAL             : 0
+!POTENTIAL_ALGORITHM       : 1
+CORIOLIS                  : 1
+WATER_DISCHARGES          : 0
+
+WIND                      : 1
+
+ATM_PRESSURE              : 1
+ATM_PRESSURE_TYPE         : 1
+!IMPOSE_INVERTED_BAROMETER : 0
+
+!For nested (sub)models
+SUBMODEL                  : 0
+MISSING_NULL              : 1
+
+DATA_ASSIMILATION         : 1
+
+BRFORCE                   : 1
+
+RADIATION                 : 2
+LOCAL_SOLUTION            : 3
+EXTERNAL_BAROTROPIC_2D    : 0
+
+BAROCLINIC                : 1
+BAROCLINIC_POLIDEGREE     : 1 ! interpolacao linear . è melhor que outras interpolacoes
+
+BIHARMONIC                : 1
+BIHARMONIC_COEF           : 1e09
+
+!Start / Continuous Computation
+CONTINUOUS                : 1
+!SLOWSTART                 : 7200.0
+INITIAL_ELEVATION         : 0
+!INITIAL_ELEVATION_VALUE   : 0.6
+
+
+!Output Options
+TIME_SERIE                : 0
+TIME_SERIE_LOCATION       : ..\General Data\TimeSeriesLocation.dat
+OUTPUT_TIME              : 0  43200
+SURFACE_OUTPUT_TIME      : 0  3600
+
+!<beginoutput>
+!<<beginoutwindow>>
+OUTPUT_TIME_W             : 0 900.
+KLB_KUB_W                 : 10 50
+ILB_IUB_W                 : 9 266
+JLB_JUB_W                 : 6 165
+!<<endoutwindow>>
+!<endoutput>

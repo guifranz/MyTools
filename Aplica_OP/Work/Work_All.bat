@@ -1,0 +1,1 @@
+Work_All.py > Work_All.log

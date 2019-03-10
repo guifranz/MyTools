@@ -1,0 +1,2591 @@
+ -------------------------- MOHID -------------------------
+ 
+       AUTHOR   : IST/MARETEC, Marine Modelling Group      
+       WWW      : http://www.mohid.com
+ 
+ 
+ Copyright (C) 1985, 1998, 2002, 2006.
+ Instituto Superior Tecnico, Technical University of Lisbon
+ -------------------------- MOHID -------------------------
+ 
+ Constructing Mohid Water on PLATAFORMA
+ Please Wait...
+  :            9
+ With decomposition
+ Domain            1
+ Domain            2
+ Domain            3
+ Domain            4
+ Domain            5
+ Domain            6
+ -------------------------- MOHID -------------------------
+ 
+       AUTHOR   : IST/MARETEC, Marine Modelling Group      
+       WWW      : http://www.mohid.com
+ 
+ 
+ Copyright (C) 1985, 1998, 2002, 2006.
+ Instituto Superior Tecnico, Technical University of Lisbon
+ -------------------------- MOHID -------------------------
+ 
+ Constructing Mohid Water on PLATAFORMA
+ Please Wait...
+  :            9
+ With decomposition
+ Domain            1
+ Domain            2
+ Domain            3
+ Domain            4
+ Domain            5
+ Domain            6
+ -------------------------- MOHID -------------------------
+ 
+       AUTHOR   : IST/MARETEC, Marine Modelling Group      
+       WWW      : http://www.mohid.com
+ 
+ 
+ Copyright (C) 1985, 1998, 2002, 2006.
+ Instituto Superior Tecnico, Technical University of Lisbon
+ -------------------------- MOHID -------------------------
+ 
+ Constructing Mohid Water on PLATAFORMA
+ Please Wait...
+  :            9
+ With decomposition
+ Domain            1
+ Domain            2
+ Domain            3
+ Domain            4
+ Domain            5
+ Domain            6
+ -------------------------- MOHID -------------------------
+ 
+       AUTHOR   : IST/MARETEC, Marine Modelling Group      
+       WWW      : http://www.mohid.com
+ 
+ 
+ Copyright (C) 1985, 1998, 2002, 2006.
+ Instituto Superior Tecnico, Technical University of Lisbon
+ -------------------------- MOHID -------------------------
+ 
+ Constructing Mohid Water on PLATAFORMA
+ Please Wait...
+  :            9
+ With decomposition
+ Domain            1
+ Domain            2
+ Domain            3
+ Domain            4
+ Domain            5
+ Domain            6
+ -------------------------- MOHID -------------------------
+ 
+       AUTHOR   : IST/MARETEC, Marine Modelling Group      
+       WWW      : http://www.mohid.com
+ 
+ 
+ Copyright (C) 1985, 1998, 2002, 2006.
+ Instituto Superior Tecnico, Technical University of Lisbon
+ -------------------------- MOHID -------------------------
+ 
+ Constructing Mohid Water on PLATAFORMA
+ Please Wait...
+  :            9
+ With decomposition
+ Domain            1
+ Domain            2
+ Domain            3
+ Domain            4
+ Domain            5
+ Domain            6
+ -------------------------- MOHID -------------------------
+ 
+       AUTHOR   : IST/MARETEC, Marine Modelling Group      
+       WWW      : http://www.mohid.com
+ 
+ 
+ Copyright (C) 1985, 1998, 2002, 2006.
+ Instituto Superior Tecnico, Technical University of Lisbon
+ -------------------------- MOHID -------------------------
+ 
+ Constructing Mohid Water on PLATAFORMA
+ Please Wait...
+  :            9
+ With decomposition
+ Domain            1
+ Domain            2
+ Domain            3
+ Domain            4
+ Domain            5
+ Domain            6
+ Construct model MPI ID =           5
+ -------------------------- MODEL -------------------------
+ 
+ Constructing      : ..
+ ID                :            1
+ Construct model MPI ID =           0
+ -------------------------- MODEL -------------------------
+ 
+ Construct model MPI ID =           1
+ Construct model MPI ID =           2
+ Constructing      : ..
+ -------------------------- MODEL -------------------------
+ -------------------------- MODEL -------------------------
+ ID                :            1
+ 
+ 
+ Constructing      : ..
+ Construct model MPI ID =           4
+ Constructing      : ..
+ ID                :            1
+ -------------------------- MODEL -------------------------
+ ID                :            1
+ Construct model MPI ID =           3
+ 
+ -------------------------- MODEL -------------------------
+ Constructing      : ..
+ 
+ ID                :            1
+ Constructing      : ..
+ ID                :            1
+ MPI_ID =           5
+ DataFile =..\data\Model_2.dat
+ MPI_ID =           0
+ DataFile =..\data\Model_2.dat
+ MPI_ID =           1
+ DataFile =..\data\Model_2.dat
+ MPI_ID =           2
+ DataFile =..\data\Model_2.dat
+ MPI_ID =           3
+ DataFile =..\data\Model_2.dat
+ MPI_ID =           4
+ DataFile =..\data\Model_2.dat
+ halo_points           3
+ Limits            4         235         189
+ Interface            1           0           1
+ Interface            2           1           2
+ Interface            3           2           3
+ Interface            4           3           4
+ Interface            5           4           5
+ mpi_send           4
+ halo_points           3
+ Limits            3         188         142
+ Interface            1           0           1
+ Interface            2           1           2
+ Interface            3           2           3
+ Interface            4           3           4
+ Interface            5           4           5
+ mpi_send           3
+ halo_points           3
+ Limits            2         141          95
+ Interface            1           0           1
+ Interface            2           1           2
+ Interface            3           2           3
+ Interface            4           3           4
+ Interface            5           4           5
+ mpi_send           2
+ halo_points           3
+ Limits            1          94          48
+ Interface            1           0           1
+ Interface            2           1           2
+ Interface            3           2           3
+ Interface            4           3           4
+ Interface            5           4           5
+ mpi_send           1
+ halo_points           3
+ Limits            0          47           1
+ Interface            1           0           1
+ Interface            2           1           2
+ Interface            3           2           3
+ Interface            4           3           4
+ Interface            5           4           5
+ mpi_receive from to            1           0
+ mpi_receive from to            2           0
+ mpi_receive from to            3           0
+ mpi_receive from to            4           0
+ mpi_receive from to            5           0
+ halo_points           3
+ Limits            5         282         236
+ Interface            1           0           1
+ Interface            2           1           2
+ Interface            3           2           3
+ Interface            4           3           4
+ Interface            5           4           5
+ mpi_send           5
+ Start           1
+ Start           1
+ Start           1
+ Start           1
+ Start           1
+ Start           1
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           1
+ Start           2
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           1
+ Start           2
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           1
+ Start           2
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           1
+ Start           2
+ End           1
+ Start           2
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           1
+ Start           2
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           2
+ Start           3
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           3
+ Start           4
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           4
+ Start           5
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           2
+ Start           3
+ End           5
+ Start           6
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           6
+ Start           7
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           7
+ Start           8
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           8
+ Start           9
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           9
+ End           2
+ Start           3
+ ---------------------- HYDRODYNAMICS ---------------------
+ 
+ Courant Number is :    1.49285851825187     
+ In Grid Cell[i,j] :            3          50
+ 
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           3
+ Start           4
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ --------------------- WATERPROPERTIES --------------------
+ 
+ Num of Properties :           15
+ 
+ Property            : salinity
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : temperature
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : oxygen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrate
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrite
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : ammonia
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : inorganic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : dissolved refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : phytoplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : zooplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ 
+ <Compilation Options Warning>
+ This executable was not compiled with the Lagrangian module.
+ <Compilation Options Warning>
+ 
+ ---------------- INTERFACE SEDIMENT-WATER -----------------
+ 
+ Num of Properties :            2
+ 
+ Property          : particulate organic nitrogen
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ Property          : particulate organic phosphorus
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ 
+ Atmosphere DT Prediction Method:            1
+ 
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           2
+ Start           3
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           4
+ Start           5
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           2
+ Start           3
+ End           2
+ Start           3
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           3
+ Start           4
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           5
+ Start           6
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           6
+ Start           7
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           7
+ Start           8
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           4
+ Start           5
+ End           3
+ Start           4
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           8
+ Start           9
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           9
+ ---------------------- HYDRODYNAMICS ---------------------
+ 
+ Courant Number is :    5.05096095757958     
+ In Grid Cell[i,j] :            1          53
+ 
+ --------------------- WATERPROPERTIES --------------------
+ 
+ Num of Properties :           15
+ 
+ Property            : salinity
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : temperature
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : oxygen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrate
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrite
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : ammonia
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : inorganic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : dissolved refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : phytoplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : zooplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ End           3
+ Start           4
+ End           3
+ Start           4
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ 
+ <Compilation Options Warning>
+ This executable was not compiled with the Lagrangian module.
+ <Compilation Options Warning>
+ 
+ ---------------- INTERFACE SEDIMENT-WATER -----------------
+ 
+ Num of Properties :            2
+ 
+ Property          : particulate organic nitrogen
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ Property          : particulate organic phosphorus
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ 
+ Atmosphere DT Prediction Method:            1
+ 
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           5
+ Start           6
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           6
+ Start           7
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           4
+ Start           5
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           7
+ Start           8
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           8
+ Start           9
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           4
+ Start           5
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           4
+ Start           5
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           9
+ ---------------------- HYDRODYNAMICS ---------------------
+ 
+ Courant Number is :    7.07214728522810     
+ In Grid Cell[i,j] :           34          53
+ 
+ End           5
+ Start           6
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ --------------------- WATERPROPERTIES --------------------
+ 
+ Num of Properties :           15
+ 
+ Property            : salinity
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : temperature
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : oxygen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrate
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrite
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : ammonia
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : inorganic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : dissolved refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : phytoplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : zooplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ 
+ <Compilation Options Warning>
+ This executable was not compiled with the Lagrangian module.
+ <Compilation Options Warning>
+ 
+ ---------------- INTERFACE SEDIMENT-WATER -----------------
+ 
+ Num of Properties :            2
+ 
+ Property          : particulate organic nitrogen
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ Property          : particulate organic phosphorus
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ 
+ Atmosphere DT Prediction Method:            1
+ 
+ End           6
+ Start           7
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           7
+ Start           8
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           5
+ Start           6
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           5
+ Start           6
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           8
+ Start           9
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           6
+ Start           7
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           6
+ Start           7
+ End           9
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ ---------------------- HYDRODYNAMICS ---------------------
+ 
+ Courant Number is :    8.49446782608766     
+ In Grid Cell[i,j] :            5          53
+ 
+ --------------------- WATERPROPERTIES --------------------
+ 
+ Num of Properties :           15
+ 
+ Property            : salinity
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : temperature
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : oxygen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrate
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrite
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : ammonia
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : inorganic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : dissolved refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : phytoplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : zooplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ End           7
+ Start           8
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           7
+ Start           8
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ 
+ <Compilation Options Warning>
+ This executable was not compiled with the Lagrangian module.
+ <Compilation Options Warning>
+ 
+ ---------------- INTERFACE SEDIMENT-WATER -----------------
+ 
+ Num of Properties :            2
+ 
+ Property          : particulate organic nitrogen
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ Property          : particulate organic phosphorus
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ 
+ Atmosphere DT Prediction Method:            1
+ 
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           8
+ Start           9
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           8
+ Start           9
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           9
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ ---------------------- HYDRODYNAMICS ---------------------
+ 
+ Courant Number is :    8.98805855966953     
+ In Grid Cell[i,j] :            1          20
+ 
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ End           9
+ ---------------------- HYDRODYNAMICS ---------------------
+ 
+ Courant Number is :    8.79953193298377     
+ In Grid Cell[i,j] :           17          53
+ 
+ --------------------- WATERPROPERTIES --------------------
+ 
+ Num of Properties :           15
+ 
+ Property            : salinity
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : temperature
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : oxygen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrate
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrite
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : ammonia
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : inorganic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : dissolved refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : phytoplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : zooplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ --------------------- WATERPROPERTIES --------------------
+ 
+ Num of Properties :           15
+ 
+ Property            : salinity
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : temperature
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : oxygen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  T
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrate
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : nitrite
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : ammonia
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved refractory organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic nitrogen
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : inorganic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : dissolved refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : dissolved non-refractory organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : particulate organic phosphorus
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  T
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  T
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : phytoplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            1
+ 
+ Property            : zooplankton
+ ---Water Quality    :  T
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  T
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ 
+ <Compilation Options Warning>
+ This executable was not compiled with the Lagrangian module.
+ <Compilation Options Warning>
+ 
+ ---------------- INTERFACE SEDIMENT-WATER -----------------
+ 
+ Num of Properties :            2
+ 
+ Property          : particulate organic nitrogen
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ Property          : particulate organic phosphorus
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ 
+ Atmosphere DT Prediction Method:            1
+ 
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ 
+ <Compilation Options Warning>
+ This executable was not compiled with the Lagrangian module.
+ <Compilation Options Warning>
+ 
+ ---------------- INTERFACE SEDIMENT-WATER -----------------
+ 
+ Num of Properties :            2
+ 
+ Property          : particulate organic nitrogen
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ Property          : particulate organic phosphorus
+ ---Benthos        :  F
+ ---BenthicEcology :  F
+ ---BenthicCEQUALW2:  F
+ ---Detritus       :  F
+ ---WaterFluxes    :  T
+ ---SedimentFluxes :  F
+ ---Sed-Water Flux :  F
+ ---Erosion        :  F
+ ---Deposition     :  T
+ 
+ 
+ Atmosphere DT Prediction Method:            1
+ 
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ Border limits  -50.0971800000000       -42.3187800000000     
+  -29.5137900000000       -22.4854500000000     
+ -------------------------- MOHID -------------------------
+ -------------------------- MOHID -------------------------
+ -------------------------- MOHID -------------------------
+ -------------------------- MOHID -------------------------
+ -------------------------- MOHID -------------------------
+ -------------------------- MOHID -------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ Running MOHID, please wait...
+ Running MOHID, please wait...
+ Running MOHID, please wait...
+ Running MOHID, please wait...
+ Running MOHID, please wait...
+ Running MOHID, please wait...
+ 
+ 
+ 
+ 
+ 
+ 
+ ILS, IUS, JLS, JUS           0         256           0         283
+ -----Current Simulation Instant---------------------------
+ Time Instant           : 2019: 3: 7: 0:11: 0
+ 
+ -----CPU Time---------------------------------------------
+ Elapsed                :           60s
+ Remaining (aprox.)     :         7911s
+ Completed (%)          :         0.7639
+ Coeficient CPU / Model :         0.0923
+ Seconds per Iteration  :         5.5335s
+ -----System Time------------------------------------------
+ System time            : 2019: 3: 5:23:34:11
+ End of the run         : 2019: 3: 6: 1:46: 3
+
+
+
+
+
+
+ -----Current Simulation Instant---------------------------
+ Time Instant           : 2019: 3: 7: 0:12: 0
+ 
+ -----CPU Time---------------------------------------------
+ Elapsed                :           67s
+ Remaining (aprox.)     :         7994s
+ Completed (%)          :         0.8333
+ Coeficient CPU / Model :         0.0933
+ Seconds per Iteration  :         5.5943s
+ -----System Time------------------------------------------
+ System time            : 2019: 3: 5:23:34:17
+ End of the run         : 2019: 3: 6: 1:47:32
+
+
+
+
+
+
+ -----Current Simulation Instant---------------------------
+ Time Instant           : 2019: 3: 7: 0:13: 0
+ 
+ -----CPU Time---------------------------------------------
+ Elapsed                :           74s
+ Remaining (aprox.)     :         8130s
+ Completed (%)          :         0.9028
+ Coeficient CPU / Model :         0.0950
+ Seconds per Iteration  :         5.6927s
+ -----System Time------------------------------------------
+ System time            : 2019: 3: 5:23:34:24
+ End of the run         : 2019: 3: 6: 1:49:55
+
+
+
+
+
+
+ -----Current Simulation Instant---------------------------
+ Time Instant           : 2019: 3: 7: 0:15: 0
+ 
+ -----CPU Time---------------------------------------------
+ Elapsed                :           89s
+ Remaining (aprox.)     :         8461s
+ Completed (%)          :         1.0417
+ Coeficient CPU / Model :         0.0990
+ Seconds per Iteration  :         5.9347s
+ -----System Time------------------------------------------
+ System time            : 2019: 3: 5:23:34:39
+ End of the run         : 2019: 3: 6: 1:55:41
+
+
+
+
+
+
+ -----Current Simulation Instant---------------------------
+ Time Instant           : 2019: 3: 7: 0:20: 0
+ 
+ -----CPU Time---------------------------------------------
+ Elapsed                :          126s
+ Remaining (aprox.)     :         8982s
+ Completed (%)          :         1.3889
+ Coeficient CPU / Model :         0.1054
+ Seconds per Iteration  :         6.3235s
+ -----System Time------------------------------------------
+ System time            : 2019: 3: 5:23:35:17
+ End of the run         : 2019: 3: 6: 2: 4:59
+
+
+
+
+
+
+ -----Current Simulation Instant---------------------------
+ Time Instant           : 2019: 3: 7: 0:20: 0
+ 
+ -----CPU Time---------------------------------------------
+ Elapsed                :          127s
+ Remaining (aprox.)     :         9080s
+ Completed (%)          :         1.3889
+ Coeficient CPU / Model :         0.1066
+ Seconds per Iteration  :         7.4446s
+ -----System Time------------------------------------------
+ System time            : 2019: 3: 5:23:35:18
+ End of the run         : 2019: 3: 6: 2: 6:39
+
+
+
+
+
+
+ -----Current Simulation Instant---------------------------
+ Time Instant           : 2019: 3: 7: 0:21: 0
+ 
+ -----CPU Time---------------------------------------------
+ Elapsed                :          134s
+ Remaining (aprox.)     :         9098s
+ Completed (%)          :         1.4583
+ Coeficient CPU / Model :         0.1069
+ Seconds per Iteration  :         7.4964s
+ -----System Time------------------------------------------
+ System time            : 2019: 3: 5:23:35:25
+ End of the run         : 2019: 3: 6: 2: 7: 3
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+!MOHID Studio Sample Data File
+!Horizontal Viscosity - 10% of grid size. in meters. is a good starting value
+VISCOSITY_H               : 200.0000    !m2/s
+!Vertical Viscosity 3D app only
+!VISCOSITY_V               : 0.0000     !m2/s
+
+!Start / Continuous Computation
+CONTINUOUS                : 1
+
+!Output Options
+OUTPUT_TIME               : 0 86400
+
+MODTURB                  : turbulence_equation
+ 
+MLD                      : 1
+MLD_BOTTOM               : 1
+
+TKE_MLD                  : 1e-5
+RICH_MLD                 : 0.5
+
+MAX_VISC_VERT            : 1

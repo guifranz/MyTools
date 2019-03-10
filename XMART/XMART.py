@@ -26,16 +26,20 @@ backup_dir [0] = (dirpath+"\\Backup\\Level_1")
 #backup_dir [1] = (dirpath+"\\Backup\\Level_2")
 
 
-interpolate_gfs_dir = (dirpath+"\\Work\\GFS\\Interpolate")
+#interpolate_gfs_dir = (dirpath+"\\Work\\GFS\\Interpolate")
+#file_name_gfs = "GFS_Plataforma_SE.hdf5"
+
+dir_meteo = ("F:\\Aplica_OP\\Work\\GFS\\GFS2HDF5\\Backup")
+file_name_meteo = "gfs.hdf5"
 
 boundary_conditions_dir = (dirpath+"\\Level_1\\General Data\\Boundary Conditions")
 
-dir_father_phy_results = "..\Work\CMEMS\GLOBAL_ANALYSIS_FORECAST_PHY\Backup"
+dir_father_phy_results = ("F:\\Aplica_OP\\Work\\CMEMS\\GLOBAL_ANALYSIS_FORECAST_PHY\\Backup")
 file_name_phy = "Plataforma_SE.hdf5"
 #file_name_phy = "Hydrodynamic_2.hdf5"
 
 
-dir_father_bio_results = "..\Work\CMEMS\GLOBAL_ANALYSIS_FORECAST_BIO\Backup"
+dir_father_bio_results = ("F:\\Aplica_OP\\Work\\CMEMS\GLOBAL_ANALYSIS_FORECAST_BIO\Backup")
 file_name_bio = "Plataforma_SE_Bio.hdf5"
 #file_name_bio ="WaterProperties_2.hdf5"
 
@@ -65,7 +69,7 @@ def read_date():
 					number = line.split()
 					number_of_runs = int(number[2])
 					
-		initial_date = datetime.datetime.now() - datetime.timedelta(days = refday_to_start)
+		initial_date = datetime.datetime.now() + datetime.timedelta(days = refday_to_start)
 		end_date = initial_date + datetime.timedelta(days = number_of_runs-1)
 		
 	else:	
@@ -100,10 +104,12 @@ def write_date(file_name):
 	for n in range(0,number_of_lines):
 		line = file_lines[n]		
 		if re.search("^START.+:", line):
-			file_lines[n] = "START " + ": " + str(next_start_date.strftime("%Y %m %d %H %M %S")) + "\n"
+			file_lines[n] = "START " + ": " + str(next_start_date.strftime("%Y %m %d ")) + "0 0 0\n"
+			#file_lines[n] = "START " + ": " + str(next_start_date.strftime("%Y %m %d %H %M %S")) + "\n"
 
 		elif re.search("^END.+:", line):	
-			file_lines[n] = "END " + ": " + str(next_end_date.strftime("%Y %m %d %H %M %S")) + "\n"
+			file_lines[n] = "END " + ": " + str(next_end_date.strftime("%Y %m %d ")) + "0 0 0\n"
+			#file_lines[n] = "END " + ": " + str(next_end_date.strftime("%Y %m %d %H %M %S")) + "\n"
 			
 	with open(file_name,"w") as file:
 		for n in range(0,number_of_lines) :
@@ -117,7 +123,7 @@ def interpolate_gfs():
 	write_date("Interpolate.dat")	
 	output = subprocess.call(["Interpolate.bat"])
 	
-	hdf_files = glob.iglob(os.path.join(interpolate_gfs_dir,"GFS.hdf5"))
+	hdf_files = glob.iglob(os.path.join(interpolate_gfs_dir, file_name_gfs))
 	for file in hdf_files:
 		shutil.copy(file, boundary_conditions_dir)
 	
@@ -127,7 +133,7 @@ def interpolate_gfs():
 #####################################################
 def copy_initial_files(level):
 
-	initial_files_dir = (backup_dir[level]+"\\"+str(old_start_date.strftime("%Y"))+"\\"+str(old_start_date.strftime("%m"))+"\\"+str(old_start_date.strftime("%Y%m%d")) + "_" + str(old_end_date.strftime("%Y%m%d")))
+	initial_files_dir = (backup_dir[level]+"\\"+str(old_start_date.strftime("%Y%m%d")) + "_" + str(old_end_date.strftime("%Y%m%d")))
 	
 	if os.path.exists(initial_files_dir):
 		
@@ -149,7 +155,7 @@ def copy_initial_files(level):
 #####################################################
 def backup(level):
 	
-	backup_dir_date = (backup_dir[level]+"\\"+str(next_start_date.strftime("%Y"))+"\\"+str(next_start_date.strftime("%m"))+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d")))
+	backup_dir_date = (backup_dir[level]+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d")))
 		
 	if not os.path.exists(backup_dir_date):
 		os.makedirs(backup_dir_date)
@@ -186,37 +192,41 @@ for run in range (0,number_of_runs):
 	
 	#Pre-processing
 	#Interpolate GFS		
-	interpolate_gfs ()
+	#interpolate_gfs ()
+				
+	#Copy Meteo
+	os.chdir(dir_meteo)
+
+	hdf5_files = glob.iglob(os.path.join(dir_meteo,file_name_meteo))
+	for file in hdf5_files:
+		shutil.copy(file, boundary_conditions_dir)
 					
 	#Copy ocean boundary conditions
 	#Hydrodynamic
-	dir_date = (dir_father_phy_results+"\\"+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d")))
+	dir_date = (dir_father_phy_results+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d")))
 	
 	os.chdir(dir_date)
 	
 	hdf5_files = glob.iglob(os.path.join(dir_date,file_name_phy))
-	
+	for file in hdf5_files:
+		shutil.copy(file, boundary_conditions_dir)
+		
 	#Water Properties
 	dir_date = (dir_father_bio_results)
-	#dir_date = (dir_father_bio_results+"\\"+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d")))
+	#dir_date = (dir_father_bio_results+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d")))
 	
 	os.chdir(dir_date)
 	
 	hdf5_files = glob.iglob(os.path.join(dir_date,file_name_bio))
-	
-	
 	for file in hdf5_files:
 		shutil.copy(file, boundary_conditions_dir)
 		
-	hdf5_files = glob.iglob(os.path.join(copy_results_from_dir_date,file_name_bio))
-	for file in hdf5_files:
-		shutil.copy(file, boundary_conditions_dir)
-		
+
 	##############################################
 	#MOHID
 	
 	#Update dates
-	for level in xrange (0,number_of_domains):
+	for level in range (0,number_of_domains):
 		os.chdir(data_dir [level])
 		write_date("Model_2.dat")
 	

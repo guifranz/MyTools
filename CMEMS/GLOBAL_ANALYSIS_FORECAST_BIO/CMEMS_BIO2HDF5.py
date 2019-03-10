@@ -3,6 +3,8 @@ import datetime
 import time
 import glob, os, shutil
 import subprocess
+import h5py
+import numpy as np
 
 dirpath = os.getcwd()
 
@@ -36,7 +38,7 @@ def read_date():
 					number = line.split()
 					refday_to_start = int(number[2])
 					
-		initial_date_download = datetime.datetime.now() - datetime.timedelta(days = 7 - refday_to_start)
+		initial_date_download = datetime.datetime.now() - datetime.timedelta(days = 11 - refday_to_start)
 		end_date_download = datetime.datetime.now() + datetime.timedelta(days = 7)
     						
 	else:
@@ -84,12 +86,14 @@ def write_date(file_name):
 		line = file_lines[n]		
 		if re.search("^START.+:", line):
 			#file_lines[n] = "START " + ": " + str(next_start_date.strftime("%Y %m %d %H %M %S")) + "\n"
-			file_lines[n] = "START " + ": " + str(initial_date_download.strftime("%Y %m %d %H %M %S")) + "\n"
+			#file_lines[n] = "START " + ": " + str(initial_date_download.strftime("%Y %m %d %H %M %S")) + "\n"
+			file_lines[n] = "START " + ": " + str(initial_date_download.strftime("%Y %m %d ")) + "12 0 0" + "\n"
 
 
 		elif re.search("^END.+:", line):	
 			#file_lines[n] = "END " + ": " + str(next_end_date.strftime("%Y %m %d %H %M %S")) + "\n"
-			file_lines[n] = "END " + ": " + str(end_date_download.strftime("%Y %m %d %H %M %S")) + "\n"
+			#file_lines[n] = "END " + ": " + str(end_date_download.strftime("%Y %m %d %H %M %S")) + "\n"
+			file_lines[n] = "END " + ": " + str(end_date_download.strftime("%Y %m %d ")) + "12 0 0" + "\n"
 			
 	with open(file_name,"w") as file:
 		for n in range(0,number_of_lines) :
@@ -131,17 +135,46 @@ output = subprocess.call(["ConvertToHdf5.bat"])
 
 if forecast_mode == 1:
 	output_dir = backup_path
+	
+	if not os.path.exists(output_dir):
+		os.makedirs(output_dir)
+
+	hdf_files = glob.iglob(os.path.join(ConvertToHdf5_dir,"*.hdf*"))
+	for file in hdf_files:
+		shutil.copy(file, output_dir)
+
+	files = glob.glob("*.nc")
+	for filename in files:
+		os.remove(filename)
+		
+	hdf5path = (os.path.join(output_dir,"Plataforma_SE_Bio.hdf5"))
+
+	hdf = h5py.File(hdf5path, 'r+')
+	group = hdf["Time"]
+	Time = group["Time_00002"].value
+
+	hdf_enddate = datetime.datetime(int(Time[0]),int(Time[1]),int(Time[2]),int(Time[3]),int(Time[4]),int(Time[5])) 
+
+	hdf_enddate_plus7 = hdf_enddate + datetime.timedelta(days = 7)
+
+	#Time = ["{:.3E}".format(int(hdf_enddate_plus7.strftime("%Y"))) , "{:.3E}".format(int(hdf_enddate_plus7.strftime("%m"))),"{:.3E}".format(int(hdf_enddate_plus7.strftime("%d"))),"{:.3E}".format(int(12)),"{:.3E}".format(int(0)),"{:.3E}".format(int(0))]
+
+	data = hdf["Time/Time_00002"]
+	data[...] = (int(hdf_enddate_plus7.strftime("%Y")), int(hdf_enddate_plus7.strftime("%m")), int(hdf_enddate_plus7.strftime("%d")), 12, 0, 0 )
+
+	hdf.close()
+
 else:
 	#output_dir = backup_path+"\\"+str(next_start_date.strftime("%Y"))+"\\"+str(next_start_date.strftime("%m"))+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d"))
 	output_dir = backup_path+"\\"+"\\"+str(initial_date.strftime("%Y%m%d")) + "_" + str(end_date.strftime("%Y%m%d"))
 	
-if not os.path.exists(output_dir):
-	os.makedirs(output_dir)
+	if not os.path.exists(output_dir):
+		os.makedirs(output_dir)
 
-hdf_files = glob.iglob(os.path.join(ConvertToHdf5_dir,"*.hdf*"))
-for file in hdf_files:
-	shutil.copy(file, output_dir)
+	hdf_files = glob.iglob(os.path.join(ConvertToHdf5_dir,"*.hdf*"))
+	for file in hdf_files:
+		shutil.copy(file, output_dir)
 
-files = glob.glob("*.nc")
-for filename in files:
-	os.remove(filename)
+	files = glob.glob("*.nc")
+	for filename in files:
+		os.remove(filename)

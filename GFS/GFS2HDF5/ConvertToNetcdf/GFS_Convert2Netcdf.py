@@ -3,7 +3,7 @@ import glob
 
 input_file = "wgrib2.bat"
 
-files = glob.glob("*.grb2*")
+files = glob.glob("*.grb2")
 #filename1 = files[0] 
 
 with open(input_file,"w") as file:

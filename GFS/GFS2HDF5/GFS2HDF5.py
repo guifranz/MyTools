@@ -3,6 +3,7 @@ import datetime
 import time
 import glob, os, shutil
 import subprocess
+from ftplib import FTP
 
 dirpath = os.getcwd()
 
@@ -12,8 +13,12 @@ download_dir = (dirpath+"\Download")
 ConvertToNetcdf_dir = (dirpath+"\ConvertToNetcdf")
 ConvertToHdf5_dir = (dirpath+"\ConvertToHdf5")
 
-backup_path =  (dirpath+"\Backup")
+#backup_path =	(dirpath+"\Backup")
+backup_path =  (r"F:\GFS\Backup")
 
+#Store ftp (No = 0 Yes = 1)
+store_ftp = 1
+ftp_credentials_file = "ftp.dat"
 #####################################################
 def read_date():
 	global initial_date
@@ -24,10 +29,10 @@ def read_date():
 		for line in file:
 			if re.search("^START.+:", line):
 				words = line.split()
-				initial_date = datetime.datetime(int(words[2]),int(words[3]),int(words[4]),int(words[5]),int(words[6]),int(words[7]))
+				initial_date = datetime.date(int(words[2]),int(words[3]),int(words[4]))
 			elif re.search("^END.+:", line):
 				words = line.split()
-				end_date = datetime.datetime(int(words[2]),int(words[3]),int(words[4]),int(words[5]),int(words[6]),int(words[7]))
+				end_date = datetime.date(int(words[2]),int(words[3]),int(words[4]))
 					
 	interval = end_date - initial_date
 	
@@ -51,15 +56,24 @@ def write_date(file_name):
 	for n in range(0,number_of_lines):
 		line = file_lines[n]		
 		if re.search("^START.+:", line):
-			file_lines[n] = "START " + ": " + str(next_start_date.strftime("%Y %m %d %H %M %S")) + "\n"
+			file_lines[n] = "START " + ": " + str(next_start_date.strftime("%Y %m %d")) + "\n"
 
 		elif re.search("^END.+:", line):	
-			file_lines[n] = "END " + ": " + str(next_end_date.strftime("%Y %m %d %H %M %S")) + "\n"
+			file_lines[n] = "END " + ": " + str(next_end_date.strftime("%Y %m %d")) + "\n"
 			
 	with open(file_name,"w") as file:
 		for n in range(0,number_of_lines) :
 			file.write(file_lines[n])
 
+#####################################################
+def read_keyword_value(keyword_name): 
+
+	with open(ftp_credentials_file) as file:
+		for line in file:
+			if re.search("^"+keyword_name+".+: ", line):
+				words = line.split()
+				value = words[2]
+				return value
 #####################################################
 forecast_mode = 0
 
@@ -71,9 +85,9 @@ with open(input_file) as file:
 
 if forecast_mode == 1:
 
-	initial_date = datetime.datetime.now()
+	initial_date = datetime.datetime.now().date() + datetime.timedelta(days = 1)
 	
-	number_of_runs = 1
+	number_of_runs = 5
 
 else:
 	read_date()
@@ -95,7 +109,7 @@ for run in range (0,number_of_runs):
 	write_date(file_name)	
 	output = subprocess.call(["GFS_DOWNLOAD.bat"])
 	
-	grib_files = glob.iglob(os.path.join(download_dir,"*.grb*"))
+	grib_files = glob.iglob(os.path.join(download_dir,"*.grb2"))
 	for file in grib_files:
 		shutil.copy(file, ConvertToNetcdf_dir)
 	
@@ -125,10 +139,10 @@ for run in range (0,number_of_runs):
 		
 	output = subprocess.call(["Convert2Hdf5.bat"])
 	
-	if forecast_mode == 1:
-		output_dir = backup_path
-	else:
-		output_dir = backup_path+"\\"+"\\"+str(initial_date.strftime("%Y%m%d"))
+	#if forecast_mode == 1:
+		#output_dir = backup_path
+	#else:
+	output_dir = backup_path+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d"))
 		
 	if not os.path.exists(output_dir):
 		os.makedirs(output_dir)
@@ -140,3 +154,42 @@ for run in range (0,number_of_runs):
 	files = glob.glob("*.nc")
 	for filename in files:
 		os.remove(filename)
+
+	#Store ftp
+	if store_ftp:
+	
+		date = str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d"))
+				
+		os.chdir(dirpath)
+		
+		keyword_name = ("server","user","password")
+		number_of_keywords = len(keyword_name)
+
+		keyword_value = [0]*number_of_keywords
+		
+		for n in range (0,number_of_keywords):
+			keyword_value[n] = read_keyword_value(keyword_name[n])
+
+		server = keyword_value[0]
+		user = keyword_value[1]
+		password = keyword_value[2]
+
+		ftp=FTP(server)
+		ftp.login(user,password)
+
+		ftp.cwd("/home/maretec/ftplocal/GFS/")
+		
+		if not date in ftp.nlst():
+			ftp.mkd(date)
+			
+		ftp.cwd(date)
+		
+		output_dir = backup_path+"\\"+str(next_start_date.strftime("%Y%m%d")) + "_" + str(next_end_date.strftime("%Y%m%d"))
+		
+		os.chdir(output_dir)
+		
+		filename = "gfs.hdf5"
+		#ftp.set_pasv(False)
+		ftp.storbinary('STOR '+filename,open(filename,'rb'))
+			   
+		ftp.quit()
